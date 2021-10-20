@@ -90,6 +90,10 @@ def ptable_to_csv(table, filename, headers=True):
 
 # region [While File Exists, Add Number - Function]
 def uniquify(path):
+    """If the given file already exists, creates file with appended number (incrementing while).
+
+    :param str path: Filepath for checking or converting to unique filepath.
+    """
     filename, extension = os.path.splitext(path)
     counter = 1
 
