@@ -93,3 +93,9 @@ def uniquify(path):
 
 ## Screenshots of process
 
+![fp1](https://user-images.githubusercontent.com/43586816/138177107-b6cbd03a-8bfe-43c0-b5cf-14a687896006.png)
+![fp2](https://user-images.githubusercontent.com/43586816/138177120-b9c36b97-fb41-404d-8a16-5fd0af31e7ca.png)
+![fp3](https://user-images.githubusercontent.com/43586816/138177121-5854106c-799a-4dae-813f-136f4d2cfb36.png)
+![fp4](https://user-images.githubusercontent.com/43586816/138177122-bf542386-6268-48ae-81f2-b30ac9ea683d.png)
+![fp5](https://user-images.githubusercontent.com/43586816/138177124-088c059c-7787-4e14-8b3c-32e55b6d15ef.png)
+![fp6](https://user-images.githubusercontent.com/43586816/138177127-7b459f0e-15d9-4513-bf97-f8b53ddb4fe0.png)
