@@ -4,14 +4,11 @@ Joshua Wren
 File Processor
 '''
 from __future__ import print_function
-from genericpath import exists
 import os
-import pathlib
 import sys
 import time
 from binascii import hexlify
 from prettytable import PrettyTable
-from pathlib import Path
 
 ''' Determine which version of Python '''
 if sys.version_info[0] < 3:
@@ -26,6 +23,7 @@ class FileProcessor:
         self.filePath = ''
         self.fileSize = ''
         self.mode = ''
+        self.lastAccessedTime = ''
         self.modifiedTime = ''
         self.createTime = ''
         self.header = ''
@@ -42,6 +40,7 @@ class FileProcessor:
                 stats = os.stat(self.filePath)
                 self.fileSize = stats.st_size
                 self.mode = stats.st_mode
+                self.lastAccessedTime = time.ctime(stats.st_atime)
                 self.modifiedTime = time.ctime(stats.st_mtime)
                 self.createTime = time.ctime(stats.st_atime)
                 self.lastErr = ''
@@ -105,7 +104,7 @@ def uniquify(path):
 # endregion
 
 
-if __name__ == "__main__":
+def main():
     print("Start of File Processor...")
 
     if PYTHON_2:
@@ -176,3 +175,7 @@ if __name__ == "__main__":
             f'\nThe following exception occurred while trying to create csv file:\n\t{error}\n')
 
     print("\n** File Processing End **")
+
+
+if __name__ == "__main__":
+    main()
